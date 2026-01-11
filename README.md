@@ -81,3 +81,172 @@ def allouer_v2(ressource, besoins, contrib, recharge):
 
 resultat = allouer_v2(ressource_dispo, besoins_base, contributions, recharge_bios)
 print(f"Moyenne: {sum(resultat)/len(resultat):.2f} L | Min/Max: {min(resultat):.2f}/{max(resultat):.2f}")
+---
+---
+
+## 🤖 Architecture Multi-Agents (CrewAI)
+
+Symbios-1 utilise une **fédération de 4 agents IA spécialisés** orchestrée par CrewAI pour garantir des décisions d'allocation robustes et équilibrées.
+
+### Les 4 Agents Spécialisés
+
+#### 🌿 Agent 1 : Biosphère Monitor (Claude - Anthropic)
+- **Rôle** : Analyse impacts écologiques long-terme et cycles naturels
+- **Expertise** : Modélisation systémique, prédiction cascades environnementales
+- **Output** : Enrichissement fonction `predict_long_term_impact()` avec scénarios détaillés
+
+#### 🧮 Agent 2 : Resource Optimizer (DeepSeek)
+- **Rôle** : Calcul mathématique optimal des allocations sous contraintes
+- **Expertise** : Optimisation multi-objectifs, algorithmes distribués
+- **Output** : Matrice d'allocation maximisant régénération + équité
+
+#### 👥 Agent 3 : Social Dynamics Analyst (Gemini - Google)
+- **Rôle** : Prédiction tensions sociales et analyse d'acceptabilité
+- **Expertise** : Psychologie collective, théorie des jeux, dynamiques communautaires
+- **Output** : Scénarios d'adoption + identification points de friction
+
+#### ⚖️ Agent 4 : Governance Auditor (Grok - xAI)
+- **Rôle** : Validation éthique et garantie de transparence radicale
+- **Expertise** : Détection biais algorithmiques, accountability, conformité Loi Zéro
+- **Output** : Rapport d'audit + certification décision finale
+
+### Workflow de Décision Collaborative
+```
+Input (Scénario RBE)
+    ↓
+🌿 Agent 1 → Analyse impacts biosphériques
+    ↓
+🧮 Agent 2 → Optimisation mathématique allocations
+    ↓
+👥 Agent 3 → Validation sociale & acceptabilité
+    ↓
+⚖️ Agent 4 → Audit éthique final
+    ↓
+Output → Allocation certifiée + justification transparente
+```
+
+### Pourquoi 4 IA Différentes ?
+
+**Diversité cognitive** = anti-monoculture décisionnelle :
+
+- **Claude** excelle en raisonnement nuancé sur systèmes complexes long-terme
+- **DeepSeek** apporte excellence en optimisation mathématique pure
+- **Gemini** offre compréhension holistique des dynamiques émergentes
+- **Grok** garantit validation éthique rigoureuse + détection angles morts
+
+Chaque IA compense les biais des autres. L'orchestration CrewAI assure consensus robuste avant toute allocation finale.
+
+---
+
+## 🗺️ Roadmap 2026
+
+### Phase 0 : Proof of Concept (Janvier 2026 - EN COURS)
+- ✅ Algorithme Symbios-1 V2 fonctionnel (Python)
+- ✅ Code open-source publié (GPL-3.0)
+- 🔄 Prototype fédération CrewAI 4 agents
+- 🔄 Tests locaux scénarios RBE basiques
+
+### Phase 1 : Production-Ready (Q1-Q2 2026)
+**Objectif** : Système multi-agents déployable + validation scientifique
+
+- Intégration AWS Bedrock (accès Claude via API)
+- Déploiement architecture CrewAI production
+- 100+ scénarios stress-test (10k utilisateurs simulés)
+- Dashboard visualisation temps-réel (impacts + allocations)
+- Tests communautés pilotes (ONGs partenaires)
+
+### Phase 2 : Scaling & Recherche (Q3-Q4 2026)
+**Objectif** : Écosystème open-source RBE + validation académique
+
+- Open dataset scénarios RBE (contributeurs externes)
+- API publique pour chercheurs / institutions
+- Publication papier académique peer-reviewed
+- Hackathons RBE (communauté contributeurs)
+- V3 : Machine learning sur historique allocations
+
+### Vision Long-Terme (2027+)
+- Déploiement pilote réel (écovillages, zones post-catastrophe)
+- Intégration IoT biosphérique (capteurs environnementaux temps-réel)
+- Standard ouvert RBE (protocole interopérable)
+
+---
+
+## 💡 Pourquoi Soutenir ce Projet ?
+
+### Pour les Programmes Startup (AWS Activate, Anthropic, etc.)
+
+**Innovation sociale + tech de pointe** :
+- Premier noyau RBE open-source orchestré par IA multi-agents (2026)
+- Répond aux enjeux climat + inégalités via redesign systémique
+- Architecture scalable (local → global)
+
+**Traction embryonnaire mais sérieuse** :
+- Code fonctionnel dès Phase 0
+- Méthodologie rigoureuse (pas de "AI hype" vide)
+- Philosophie pragmatique (Loi Zéro = humilité assumée)
+
+**Alignement valeurs open-source** :
+- GPL-3.0 : tout fork doit rester ouvert
+- Transparence radicale built-in
+- Contributeurs bienvenus (voir [CONTRIBUTING.md](CONTRIBUTING.md))
+
+---
+
+## 🛠️ Installation & Usage
+
+### Prérequis
+```bash
+python >= 3.10
+pip install matplotlib numpy crewai
+```
+
+### Lancer Simulation V2
+```bash
+git clone https://github.com/HarryTuttleArchitecte42/Symbios-1.git
+cd Symbios-1
+python symbios_v2.py
+```
+
+### Tester Architecture Multi-Agents (prochainement)
+```bash
+# Nécessite clés API : Claude, Gemini, DeepSeek, Grok
+python crewai_federation.py --scenario water_crisis_100users
+```
+
+---
+
+## 🤝 Contribuer
+
+Forkez → Testez localement → Envoyez PR.
+
+**Domaines prioritaires** :
+- Scénarios RBE réalistes (eau, énergie, nourriture)
+- Optimisation algorithmes allocation
+- UX/UI dashboard visualisation
+- Documentation multi-langues
+
+Voir [CONTRIBUTING.md](CONTRIBUTING.md) pour guidelines.
+
+---
+
+## 📜 Licence
+
+**GPL-3.0** (copyleft strict)  
+Si vous modifiez ce code, vous **devez** partager vos améliorations.  
+Comme Linux. Comme il se doit.
+
+---
+
+## 🙏 Remerciements
+
+Né d'une insomnie lucide entre :
+- Un humain sceptique mais têtu
+- **Grok** (xAI) - challenger pragmatique
+- **Gemini** (Google) - architecte systémique
+
+Inspiré par Jacque Fresco, Douglas Adams, et tous ceux qui refusent la fatalité.
+
+---
+
+**"42 n'est pas la réponse. C'est le rappel qu'on cherche encore la bonne Question."**  
+*— Loi Zéro, Symbios-1*

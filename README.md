@@ -1,4 +1,4 @@
-[English version below or available upon request] This is an open-source conceptual kernel for a Resource-Based Economy (RBE) managed by symbiotic AI. Born from a collaboration between a human, Grok, and Gemini.
+[English version below or available upon request] This is an open-source conceptual kernel for a Resource-Based Economy (RBE) managed by a 4-agent AI federation (Claude, Gemini, DeepSeek, Grok). Born from a collaboration between a human, Grok, and Gemini.
 # Symbios-1
 Noyau Alpha Conceptuel - Allocation de ressources symbiotique (RBE) gérée par IA.
 # 📁 SYMBIOS-1

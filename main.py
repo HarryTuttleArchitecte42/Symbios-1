@@ -1,19 +1,24 @@
+# -*- coding: utf-8 -*-
 import boto3
 import os
 import sys
 from src.orchestrator import SynergyEngine
 
 def main():
+    # Définition de la région par défaut (Critique pour éviter l'erreur rencontrée)
+    # On utilise 'us-east-1' car c'est la région principale pour AWS Bedrock
+    AWS_REGION = os.getenv("AWS_DEFAULT_REGION", "us-east-1")
+
     print("--- Symbios-1: Multi-Agent R&D Framework ---")
-    print("Loi Zéro: 42 - Status: Active")
+    print(f"Loi Zero: 42 - Status: Active (Region: {AWS_REGION})")
     
     try:
         # Configuration AWS pour Bedrock (Infrastructure Layer)
-        session = boto3.Session()
+        # On force la région ici pour garantir la stabilité chez les testeurs tiers
+        session = boto3.Session(region_name=AWS_REGION)
         bedrock_client = session.client(service_name='bedrock-runtime')
         
         # Initialisation du moteur SynergyAI (Orchestration Layer)
-        # On passe le paramètre 'enable_life_engine' pour correspondre au README
         engine = SynergyEngine(
             client=bedrock_client, 
             enable_life_engine=True
@@ -28,7 +33,8 @@ def main():
         # print(f"Simulation Output: {simulation_result}")
 
     except Exception as e:
-        print(f"Error initializing Symbios-1: {e}")
+        print(f"\n[CRITICAL ERROR] Failed to initialize Symbios-1: {e}")
+        print("Tip: Ensure your AWS credentials are set and region is accessible.")
         sys.exit(1)
 
 if __name__ == "__main__":

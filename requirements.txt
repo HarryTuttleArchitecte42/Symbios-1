@@ -1,13 +1,19 @@
+# --- Symbios-1 Core Framework Dependencies ---
+
 # CrewAI et agents
 crewai>=0.28.0
 crewai-tools>=0.2.0
 
-# APIs IA
+# APIs IA (Multi-model support)
 anthropic>=0.18.0
 openai>=1.12.0
 google-generativeai>=0.3.0
 
-# Data & Viz
+# Cloud Infrastructure & AWS Bedrock
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Data & Viz (LIFE Engine Analytics)
 numpy>=1.24.0
 matplotlib>=3.7.0
 pandas>=2.0.0
@@ -15,6 +21,3 @@ pandas>=2.0.0
 # Utilities
 python-dotenv>=1.0.0
 pydantic>=2.0.0
-boto3>=1.34.0
-botocore>=1.34.0
-python-dotenv>=1.0.0

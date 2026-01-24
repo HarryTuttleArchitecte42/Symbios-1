@@ -1,4 +1,8 @@
-# Symbios-1
+# Research Manifesto: The Symbios-1 Framework
+
+> **Note:** This document outlines the fundamental research, optimization logic, and multi-agent orchestration principles that power the **SynergyAI** ecosystem.
+
+---# Symbios-1
 
 **Symbios-1** is an open-source research and development framework focused on **multi-agent orchestration** and **multi-objective optimization** in complex, distributed systems.
 

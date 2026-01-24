@@ -7,7 +7,6 @@
 # Symbios-1
 
 **Symbios-1** is an open-source research and development framework...
-(Gardez tout le reste de votre texte actuel ici)# Symbios-1
 
 **Symbios-1** is an open-source research and development framework focused on **multi-agent orchestration** and **multi-objective optimization** in complex, distributed systems.
 
@@ -66,7 +65,7 @@ At a high level, Symbios-1 is composed of:
 4. **Observability & Feedback**  
    Instrumentation for monitoring decisions, outcomes, and system behavior over time.
 
-The architecture is designed to be cloud-native and compatible with managed AI inference platforms such as **Amazon Bedrock**.
+The architecture is designed to be cloud-native and compatible with managed AI inference platforms such as **Amazon Bedrock** and **Google Vertex AI**
 
 ---
 

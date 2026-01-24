@@ -1,4 +1,13 @@
+# SynergyAI | Stealth Phase
+**Strategic orchestration of the Symbios-1 engine for advanced cognitive synergy.**
+[synergyai.fr](https://synergyai.fr) | [contact](mailto:dsxbruno@synergyai.fr)
+
+---
+
 # Symbios-1
+
+**Symbios-1** is an open-source research and development framework...
+(Gardez tout le reste de votre texte actuel ici)# Symbios-1
 
 **Symbios-1** is an open-source research and development framework focused on **multi-agent orchestration** and **multi-objective optimization** in complex, distributed systems.
 

@@ -1,6 +1,16 @@
+# --- Sécurité Critique SynergyAI ---
 .env
 *.db
 synergy_memory_v2.db
+
+# --- Python & Système ---
 __pycache__/
 *.pyc
 venv/
+.vscode/
+
+# --- Web & Build ---
+node_modules/
+dist/
+build/
+*.log

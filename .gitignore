@@ -1,0 +1,6 @@
+.env
+*.db
+synergy_memory_v2.db
+__pycache__/
+*.pyc
+venv/

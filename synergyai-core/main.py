@@ -15,7 +15,7 @@ init_db()           # Ta base existante
 init_memory_db()    # Ta nouvelle mémoire persistante
 
 # Attention au chemin des templates selon ton arborescence
-templates = Jinja2Templates(directory="synergyai-core/templates")
+templates = Jinja2Templates(directory="templates")
 
 @app.get("/", response_class=HTMLResponse)
 async def get_index(request: Request):

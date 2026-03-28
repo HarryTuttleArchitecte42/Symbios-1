@@ -2,9 +2,9 @@ version: 1.0
 build:
   commands:
     build:
-      - pip3 install -r synergyai-core/requirements.txt
+      - pip3 install -r synergyai-core/requirements.txt --target /app/deps
 run:
   runtime: python311
-  command: python3 -m uvicorn synergyai-core.main:app --host 0.0.0.0 --port 8080
+  command: python3 -c "import sys; sys.path.insert(0, '/app/deps'); import uvicorn; uvicorn.run('synergyai-core.main:app', host='0.0.0.0', port=8080)"
   network:
     port: 8080

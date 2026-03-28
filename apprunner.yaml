@@ -1,0 +1,10 @@
+version: 1.0
+build:
+  commands:
+    build:
+      - pip3 install -r synergyyai-core/requirements.txt
+run:
+  runtime: python311
+  command: python3 main.py  # adapte selon ton point d'entrée
+  network:
+    port: 8080
